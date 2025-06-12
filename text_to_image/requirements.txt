@@ -1,0 +1,20 @@
+# Core model and training dependencies
+torch==2.1.0
+torchvision
+transformers>=4.25.1
+diffusers @ git+https://github.com/huggingface/diffusers.git@f161e277d0ec534afa4dfc461bc5baacffd7278b
+peft==0.7.0
+
+# Data handling and utilities
+datasets>=2.19.1
+ftfy
+Jinja2
+
+# Training acceleration
+accelerate>=0.16.0
+
+# Logging and visualization
+tensorboard
+
+# MLflow for model tracking (do NOT install full version to avoid AIS conflict)
+mlflow-skinny==2.18.0
